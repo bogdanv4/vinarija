@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Raleway";
+}
+body {
+  background-color: white;
+}
+
+.topnav {
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: #ddd;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.topnav a:hover {
+  padding-bottom: 0;
+  border-bottom: 1px solid #d3ae68;
+}
+.topnav a:nth-child(5) {
+  display: none;
+}
+.topnav .icon {
+  display: none;
+}
+
+#logo {
+  float: left;
+  font-size: 0;
+  padding: 12px 16px;
+}
+#logo:hover {
+  border-bottom: none;
+}
+#logo img {
+  max-width: 100px;
+}
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/hero.jpg");
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hero-text h1 {
+  font-family: "Cinzel", Sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 57px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #d3ae68;
+  border-bottom: 1px solid #d3ae68;
+}
+.hero-btn {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  background-color: #a41f35;
+  transition: 0.3s;
+}
+.hero-btn:hover {
+  animation-name: btnColor;
+  animation-duration: 2s;
+}
+@keyframes btnColor {
+  from {
+    background-color: #a41f35;
+  }
+  to {
+    background-color: #d3ae68;
+  }
+}
+.hero-btn a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* O NAMA */
+.about-hero {
+  background-image: url(../img/about-hero.jpg);
+  background-attachment: fixed;
+  height: 50vh;
+}
+.about-links a {
+  color: #d3ae68;
+  text-decoration: none;
+  padding: 0 10px;
+  border-right: 1px solid #d3ae68;
+  transition: 0.3s;
+}
+.about-links a:last-child {
+  border-right: none;
+}
+.about-links a:hover {
+  color: #fff;
+}
+.about-hero .hero-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #d3ae68;
+  border-bottom: 1px solid #d3ae68;
+}
+.about-hero .hero-text h1 {
+  border: 0;
+  padding-top: 0;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.main-heading {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+}
+.main-heading h1 {
+  font-family: "Cinzel", Sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 57px;
+  color: #d3ae68;
+  animation-name: headingColor;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes headingColor {
+  0% {
+    color: #d3ae68;
+  }
+  50% {
+    color: #a41f35;
+  }
+  100% {
+    color: #d3ae68;
+  }
+}
+.main-text {
+  padding: 0 100px;
+  margin-bottom: 50px;
+}
+.main-text p {
+  text-align: center;
+}
+.main-img {
+  margin-bottom: 50px;
+}
+.main-img img {
+  max-width: 100%;
+}
+.main-img img:hover {
+  animation-name: imgBlur;
+  animation-duration: 3s;
+}
+@keyframes imgBlur {
+  0% {
+    filter: blur(0);
+  }
+  50% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
+.main-text h2 {
+  color: #d3ae68;
+  text-align: center;
+  border-bottom: 2px solid #d3ae68;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+/* POSETE */
+.posete-hero {
+  background-image: url(../img/posete-hero.jpg);
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.column-33 {
+  width: 30%;
+  text-align: center;
+  border-left: 1px dotted black;
+  padding: 10px;
+}
+.column-33:last-child {
+  border-right: 1px dotted black;
+}
+.column-33 h1 {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.column-33 p {
+  padding: 0 30px;
+}
+.column-50 {
+  width: 50%;
+  max-width: 500px;
+}
+
+.column-50 .main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  height: 500px;
+}
+/* KONTAKT */
+.contact-hero {
+  background-image: url(../img/kontakt-hero.jpg);
+  background-position: initial;
+}
+.contact-hero .hero-text h1 {
+  padding-bottom: 0;
+}
+.contact-row {
+  flex-direction: column;
+}
+.contact-row .main-heading {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+form {
+  margin: 50px;
+}
+#fname {
+  margin-right: 10px;
+}
+#lname {
+  margin-left: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #a41f35;
+  color: white;
+  padding: 20px 70px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: auto;
+  transition: all 0.3s;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+input[type="submit"]:hover {
+  animation-name: btnColor;
+  animation-duration: 2s;
+}
+
+@media screen and (max-width: 1000px) {
+  .row {
+    flex-direction: column;
+  }
+  .column-33 {
+    width: 100%;
+    border: none;
+  }
+  .column-33:last-child {
+    border: none;
+  }
+  .column-50 {
+    width: 100%;
+    /* border: none; */
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav {
+    display: block;
+  }
+  .topnav a {
+    display: none;
+  }
+  .topnav a:hover {
+    transform: none;
+  }
+  #logo {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    font-size: 22px;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive a:nth-child(5) {
+    display: block;
+  }
+  .about-links a {
+    display: block;
+    border-right: none;
+    padding: 5px 0;
+  }
+}

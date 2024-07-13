@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="vinarija aleksandrovic vino belo crno" />
+    <meta name="author" content="Strahinja" />
+    <meta name="description" content="Klub ljubitelja vina" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Vinarija Aleksandrović</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <div class="logo">
+          <a id="logo" href="index.html">
+            <img src="./img/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="menu-links">
+          <a href="contact.html">Kontakt</a>
+          <a href="posete.html">Posete i degustacije</a>
+          <a href="about.html">O nama</a>
+          <a href="index.html">Početna</a>
+          <a href="javascript:void(0);" class="icon" onclick="menu()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="hero about-hero contact-hero">
+      <div class="hero-text">
+        <h1>KONTAKT</h1>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="column-33">
+            <h1>POSETE I REZERVACIJE</h1>
+            <p>
+              Milan Marković, kustos <br />
+              mob: +381 (0)62 237 240 <br />
+              <br />
+
+              Ljiljana Pavlićević Antović, kustos <br />
+              mob: +381 (0)62 262 277
+            </p>
+          </div>
+          <div class="column-33">
+            <h1>RADNO VREME</h1>
+            <p>
+              Radnim danima i subotom <br />
+              08h do 19h <br />
+              <br />
+              Nedeljom <br />
+              10h do 18h <br />
+              <br />
+
+              <b>
+                U okviru vinarije nemamo “à la carte” restoran, rezervacije za
+                degustacije, kao i uparivanje hrane i vina su obavezne.
+              </b>
+            </p>
+          </div>
+          <div class="column-33">
+            <h1>KONTAKT</h1>
+            <p>
+              Vinarija Aleksandrović d.o.o <br />
+              Vinča, Topola – Oplenac, <br />
+              34310 Republika Srbija <br />
+              <br />
+
+              +381 34 826 555 (08-16h) <br />
+              <br />
+
+              office@vinarijaaleksandrovic.rs <br />
+              <br />
+            </p>
+          </div>
+        </div>
+        <div class="row contact-row">
+          <div class="main-heading">
+            <h1>Zakaži posetu</h1>
+          </div>
+          <form>
+            <div class="row">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Ime..."
+              />
+
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Prezime..."
+              />
+            </div>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="E-mail..."
+            />
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              placeholder="Broj telefona..."
+            />
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Poruka..."
+              style="height: 200px"
+            ></textarea>
+            <div class="row">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
